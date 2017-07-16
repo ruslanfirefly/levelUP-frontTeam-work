@@ -1,0 +1,172 @@
+#preloder{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    opacity: 1;
+    z-index: 999;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    transition: 3s;
+}
+#preload1{opacity: 0;transition: 2s;}
+#preload2{opacity: 0;transition: 2s;}
+#preload3{opacity: 0;transition: 2s;}
+#preload4{opacity: 0;transition: 2s;}
+#preload5{opacity: 0;transition: 2s;}
+#preload6{opacity: 0;transition: 2s;}
+#preload7{opacity: 0;transition: 2s;}
+#preload8{opacity: 0;transition: 2s;}
+#preload9{opacity: 0;transition: 2s;}
+#preload10{opacity: 0;transition: 2s;}
+
+
+h2 p{
+    color: #ccc;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.1em;
+}
+/*Header*/
+.header{
+    position: relative;
+    height: 100vh;
+}
+.header-text{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    margin-top: 2%;
+    color: whitesmoke;
+    font-size: 22px;
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 2%;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.1em;
+    text-decoration: overline;
+    z-index: 1;
+}
+.title-name{
+    position: absolute;
+    top:0;
+    margin: 0 auto;
+    margin-top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+    flex-wrap: wrap;
+    color: whitesmoke;
+    pointer-events: none;
+}
+.header-text div{
+    margin:1%;
+}
+.header-text div:hover{
+    font-size: 23px;
+    margin-right: 2.3%;
+    color:lawngreen;
+    transition: 0.2s;
+    text-decoration: overline; 
+}
+.content{
+    height: 100vh;
+}
+/*Bootstrap*/
+.conteiner{
+    width:100%;
+    height: 600px;
+}
+.pic-carosul{
+    margin: 0 auto;
+}
+.carousel-indicators{
+    display: none;
+}
+.carousel-caption{
+    bottom: 0;
+    pointer-events: none;
+}
+.item{
+    height: 650px;
+}
+.carousel.fade{
+	opacity: 1;
+}
+.carousel.fade .item{
+	display: block;
+	position: absolute;	
+	left: 0;
+	top: 0;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 1s;
+}
+.carousel.fade .item.active{
+	position: relative;
+	opacity: 1;
+}
+.services{
+    height: 450px;
+    display: flex;
+    direction: row;
+    padding-top: 6%;
+    justify-content: space-around;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    pointer-events: none;
+}
+#service1{
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+#service2{
+    opacity: 0;
+    transition: opacity 2s;
+    pointer-events: none;
+}
+#service3{
+    opacity: 0;
+    transition: opacity 4s;
+    pointer-events: none;
+}
+.Name-service{
+    pointer-events: none;
+    margin-top:10px;
+    margin-bottom:10px;
+    display: flex;
+    justify-content: center;
+    background-color: #393939;
+    color:whitesmoke;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+}
+.ncap{
+    padding-top:10px;
+    width: 300px;
+    height: 50px;
+    background-color: #F0F8E6;
+    color:#333;
+    border-radius: 20px;
+    pointer-events: none;
+}
+.services img{
+    margin-top:5%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 70px whitesmoke;
+    pointer-events: none;
+}
+
