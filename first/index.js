@@ -2,8 +2,26 @@ let temp=document.getElementsByClassName("services");
 let appead1=document.getElementById("service1");
     appead2=document.getElementById("service2");
     appead3=document.getElementById("service3");
+var numb_move1=document.getElementById("num1");
+var numb_move2=document.getElementById("num2");
+var numb_move3=document.getElementById("num3");
+var bar1=document.getElementById("bar1");
+var bar2=document.getElementById("bar2");
+var bar3=document.getElementById("bar3");
+var numb1=2141;
+    numb2=3141;
+    numb3=5541;
+    number1=0;
+    number2=0;
+    number3=0;
+    width1=100;
+    wid1=0;
+    width2=100;
+    wid2=0;
+    width3=100;
+    wid3=0;
 window.onscroll=function take_serv(){
-    let scrolled = window.pageYOffset||document.documentElement.scrollTop;
+    let scrolled = window.pageYOffset;
     if(scrolled>1000){
        appead1.style.opacity='1';
        appead2.style.opacity='1';
@@ -13,6 +31,70 @@ window.onscroll=function take_serv(){
        appead1.style.opacity='0';
        appead2.style.opacity='0';
        appead3.style.opacity='0';
+    }
+    if(scrolled>1399){
+        function move_number1(){
+            setInterval(()=>{
+                if(number1!=numb1){
+                    number1=number1+1;
+                    numb_move1.innerHTML=number1;
+                    
+                    setInterval(move_number1,50);
+                }
+            },50);
+        }
+        function move_number2(){
+            setInterval(()=>{
+                if(number2!=numb2){
+                    number2=number2+1;
+                    numb_move2.innerHTML=number2;
+                    setInterval(move_number2,50);
+                }
+            },50);
+        }
+        function move_number3(){
+            setInterval(()=>{
+                if(number3!=numb3){
+                    number3=number3+1;
+                    numb_move3.innerHTML=number3;
+                    setInterval(move_number3,50);
+                }
+            },50);
+        }
+        setTimeout(move_number1,1000);
+        setTimeout(move_number2,1000);
+        setTimeout(move_number3,1000);
+        function move_bar1(){
+            setTimeout(()=>{
+                if(wid1!=width1){
+                    wid1=wid1+1;
+                    bar1.style.width=wid1+'%';
+                    
+                    setInterval(move_bar1,50);
+                }
+            },50);
+        }
+        function move_bar2(){
+            setTimeout(()=>{
+                if(wid2!=width2){
+                    wid2=wid2+1;
+                    bar2.style.width=wid2+'%';
+                    setInterval(move_bar2,50);
+                }
+            },50);
+        }
+        function move_bar3(){
+            setTimeout(()=>{
+                if(wid3!=width3){
+                    wid3=wid3+1;
+                    bar3.style.width=wid3+'%';
+                    setInterval(move_bar3,50);
+                }
+            },50);
+        }
+        setTimeout(move_bar1,1000);
+        setTimeout(move_bar2,1000);
+        setTimeout(move_bar3,1000);
     }
 }
 let tick=0;
@@ -66,3 +148,5 @@ function preloader(){
     }
     setTimeout(preloader,100);
 }
+clearTimeout();
+clearInterval();
